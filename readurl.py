@@ -7,7 +7,7 @@ import re
 Url = raw_input("What is the URL of the website you want to check? :" + '\n')
 while True:
     try:
-        Time = int(raw_input("What amount of time would you like to let pass between checking the website against itself:  " + '\n'))
+        Time = int(raw_input("What amount of time would you like to let pass between checking the website against itself: " + '\n'))
         break
     except ValueError:
         print("Not a valid number")
