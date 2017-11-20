@@ -26,11 +26,8 @@ starttag_list2 = []
 data_list2 = []
 
 
-
-
 def returnNotMatches(a, b):
     return [[x for x in a if x not in b], [x for x in b if x not in a]]
-
 
 
 def change():
@@ -44,7 +41,8 @@ def nochange():
     print "There was no change, but that's okay Simon, you'll get it to work"
     print "End of code"
 
-    
+ 
+
     
 def findoutmore():
     answer = raw_input("Would you like to know about \'start tags\', \'data\', or \'different words\'?")
@@ -70,27 +68,21 @@ def findoutmore():
             findoutmore()
        
     
-    
-    
+
 
 class MyHTMLParser(HTMLParser):
-
     def handle_starttag(self,tag,attrs):
-#       print "Encountered a start tag:", tag
         starttag_list.append(tag)
 
     def handle_data(self,data):
-#       print "Encountered some data :", data
         data_list.append(data)
     
-class MyHTMLParser2(HTMLParser):
 
+class MyHTMLParser2(HTMLParser):
     def handle_starttag2(self,tag,attrs):
-#       print "Encountered a start tag:", tag
         starttag_list2.append(tag)
     
     def handle_data2(self,data):
-#       print "Encountered some data :", data
         data_list2.append(data)
 
 
@@ -135,5 +127,3 @@ def main()
 
 if __name__ == "__main__":
     main()
-
-               
