@@ -2,8 +2,11 @@
 
 Instructions:
 1.Install Python 2.7x
+
 2.Ensure that pip is installed
+
 3._Code will run as long as the original modules that came with the install package are present_
+
 4.Copy parser.py code into text editor and run with a command-line interface
 
 The project checks start tags, data, and word changes of a given website after a given amount of seconds
