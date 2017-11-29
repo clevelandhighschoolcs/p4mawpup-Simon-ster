@@ -10,6 +10,9 @@ Instructions:
 
 4.Copy parser.py code into text editor and run with a command-line interface
 
+
+# Notes
+
 The project checks start tags, data, and word changes of a given website after a given amount of seconds
 
 Prompts ask for url of website as well as a number of seconds
