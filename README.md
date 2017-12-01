@@ -8,7 +8,7 @@ Instructions:
 
 3._Code will run as long as the original modules that came with the install package are present_
 
-4.Copy parser.py code into text editor and run with a command-line interface
+4.Copy parser.py code into text editor and run with a command-line interface inside a virtual environment
 
 
 # Notes
@@ -17,7 +17,7 @@ The project checks start tags, data, and word changes of a given website after a
 
 Prompts ask for url of website as well as a number of seconds
 
-Url must be given fully with _https://_
+Url must be given fully
 
 Seconds must be given in integer form
 
