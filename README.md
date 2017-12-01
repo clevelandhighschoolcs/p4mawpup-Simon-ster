@@ -6,9 +6,11 @@ Instructions:
 
 2.Ensure that pip is installed
 
-3._Code will run as long as the original modules that came with the install package are present_
+3._Program only requires that the original modules that came with the install package are present_
 
 4.Copy parser.py code into text editor and run with a command-line interface inside a virtual environment
+
+
 
 
 # Notes
