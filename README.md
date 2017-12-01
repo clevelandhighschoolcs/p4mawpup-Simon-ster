@@ -27,7 +27,7 @@ If wanting to know more about the options provided such as start tags, the promp
 
 To select this, type the words: start tags. Please make sure your raw input is written as it appears in the code.    *see below image
 
-_Occasionally, the "changed words" on the website will appear as hex code._
+_For some situations, the "changed words" on the website will appear in a hex code format._
 
 
 
