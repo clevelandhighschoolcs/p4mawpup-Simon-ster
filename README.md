@@ -38,4 +38,4 @@ Contributions from Walker's snippets and www.python.org
 If encountering difficulties with input, consult this screenshot for possible explanations for the issues
 ![screen shot 2017-11-30 at 9 24 11 pm](https://user-images.githubusercontent.com/33040932/33469040-260796b2-d615-11e7-80ad-b680f68a90bf.png)
 
-https://raw.githubusercontent.com/Simon-ster/PythonProj/master/Copy%20of%20MyFlowchart.png
+![Flowchart image](https://raw.githubusercontent.com/Simon-ster/PythonProj/master/Copy%20of%20MyFlowchart.png)
