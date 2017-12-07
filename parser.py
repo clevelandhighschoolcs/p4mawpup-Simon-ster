@@ -8,6 +8,18 @@ import re
 #get url
 Url = raw_input("What is the URL of the website you want to check? :" + '\n')
 
+webUrl = urllib2.urlopen(Url)
+if (webUrl.getcode() == 200):
+    data = webUrl.read()
+else:
+    print "Server error, cannot access website" + str(webUrl.getcode()) + " error"
+starttag_list = []
+data_list = []
+starttag_list2 = []
+data_list2 = []
+
+
+
 #get time
 while True:
 #make sure 'time' is a number
@@ -18,18 +30,8 @@ while True:
         print("Not a valid number")
 
 
-webUrl = urllib2.urlopen(Url)
-data = webUrl.read()
-starttag_list = []
-data_list = []
-starttag_list2 = []
-data_list2 = []
-
-
-
-
 def returnNotMatches(a, b):
-    return [[x for x in a if x not in b], [x for x in b if x not in a]]
+    return [len([x for x in a if x not in b]), len([x for x in b if x not in a])]
 
 
 
@@ -60,8 +62,8 @@ def findoutmore():
         findoutmore()
 #different words
     elif answer.lower() == 'different words':
-        print "Here is a list of words and hex code that changed and the different number of instances it appeared:"
-        print returnNotMatches(Test1, Test2)
+        print "Here are how many words changed:"
+        print returnNotMatches(Test1, Test2)[0] + returnNotMatches(Test1, Test2)[1]
         findoutmore()
 #other
     else:
