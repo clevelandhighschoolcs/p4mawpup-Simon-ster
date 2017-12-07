@@ -62,7 +62,7 @@ def findoutmore():
         findoutmore()
 #different words
     elif answer.lower() == 'different words':
-        print "Here are how many words changed:"
+        print "Here are how many words were different:"
         print returnNotMatches(Test1, Test2)[0] + returnNotMatches(Test1, Test2)[1]
         findoutmore()
 #other
