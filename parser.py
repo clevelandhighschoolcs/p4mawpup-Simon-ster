@@ -3,10 +3,18 @@ import urllib2
 import time
 from collections import Counter
 import re
+import requests
+from twilio.rest import Client
 
+#twilio stuff, change as nessecary (I changed it so its not my number, don't get any ideas Morgan)
+account_sid = 'ACd2a8b516fff33e038747b965sf2338a6a'
+auth_token = '0de31dcbdfgr445gb0855e90cb5c58fdfb3'
+twilio_phone_number = '+197153335892'
+my_phone_number = '+15039582032'
 
 #get url
 Url = raw_input("What is the URL of the website you want to check? :" + '\n')
+text = raw_input("Would you like to get a text message when a change is detected? (y/n)")
 
 webUrl = urllib2.urlopen(Url)
 if (webUrl.getcode() == 200):
@@ -36,13 +44,24 @@ def returnNotMatches(a, b):
 
 
 def change():
-    print "There was a change"
-    result = raw_input("Would you like to know more about the change?")
-    if result.lower() == 'yes' or result.lower() =='y':
-        findoutmore()
-    else:
-        print "End of code"
-         
+	print "There was a change"
+	
+	if text.lower() == 'yes' or text.lower() =='y':
+		body = 'There was a change to the webpage!'
+		client = Client(account_sid, auth_token)
+		client.messages.create(
+			body=body,
+			to=my_phone_number,
+			from_=twilio_phone_number
+			)
+    
+	result = raw_input("Would you like to know more about the change?")
+	if result.lower() == 'yes' or result.lower() =='y':
+		findoutmore()
+	else:
+		print "End of code"
+	
+     
         
 def nochange():
     print "The website didn't change, but that's okay. Some things aren't as ready for change as others." + '\n' + "Who are we to tell them otherwise?"
@@ -134,4 +153,3 @@ if Test1 == Test2:
     nochange()
 else:
     change()
-
