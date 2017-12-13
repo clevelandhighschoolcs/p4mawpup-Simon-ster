@@ -7,14 +7,22 @@ import requests
 from twilio.rest import Client
 
 #twilio stuff, change as nessecary (I changed it so its not my number, don't get any ideas Morgan)
-account_sid = 'ACf96cb653d85bdafacdc073a055424ceb'
-auth_token = 'f943215834680acddd9029590509070a'
-twilio_phone_number = '+12708734145'
-my_phone_number = '+19715543309'
+
+#account_sid = 'ACf96cb653d85bd234afacdc073a0553424ceb'
+#auth_token = 'f94322158346as80acddd9h029590509070a'
+#twilio_phone_number = '+122730874341445'
+#my_phone_number = '+19715543309'
+
 
 #get url
 Url = raw_input("What is the URL of the website you want to check? :" + '\n')
-text = raw_input("Would you like to get a text message when a change is detected? (y/n)")
+text = raw_input("Would you like to connect a Twilio account to get a text message if there is a change?")
+if text.lower() == 'y' or text.lower() == 'yes':
+	account_sid = raw_input("Twilio account sid")
+	auth_token = raw_input("Twilio authentication token")
+	twilio_phone_number = ("+" + "twilio phone number")
+	my_phone_number = ("+" + "Your phone number")
+	
 
 webUrl = urllib2.urlopen(Url)
 if (webUrl.getcode() == 200):
