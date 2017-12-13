@@ -20,8 +20,8 @@ text = raw_input("Would you like to connect a Twilio account to get a text messa
 if text.lower() == 'y' or text.lower() == 'yes':
 	account_sid = raw_input("Twilio account sid")
 	auth_token = raw_input("Twilio authentication token")
-	twilio_phone_number = ("+" + "twilio phone number")
-	my_phone_number = ("+" + "Your phone number")
+	twilio_phone_number = raw_input("+" + "twilio phone number")
+	my_phone_number = raw_input("+" + "Your phone number")
 	
 
 webUrl = urllib2.urlopen(Url)
