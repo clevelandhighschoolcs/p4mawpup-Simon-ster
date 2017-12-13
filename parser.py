@@ -7,10 +7,10 @@ import requests
 from twilio.rest import Client
 
 #twilio stuff, change as nessecary (I changed it so its not my number, don't get any ideas Morgan)
-account_sid = 'ACd2a8b516fff33e038747b965sf2338a6a'
-auth_token = '0de31dcbdfgr445gb0855e90cb5c58fdfb3'
-twilio_phone_number = '+197153335892'
-my_phone_number = '+15039582032'
+account_sid = 'ACf96cb653d85bdafacdc073a055424ceb'
+auth_token = 'f943215834680acddd9029590509070a'
+twilio_phone_number = '+12708734145'
+my_phone_number = '+19713025053'
 
 #get url
 Url = raw_input("What is the URL of the website you want to check? :" + '\n')
