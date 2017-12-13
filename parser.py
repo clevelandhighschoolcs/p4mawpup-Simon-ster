@@ -10,7 +10,7 @@ from twilio.rest import Client
 account_sid = 'ACf96cb653d85bdafacdc073a055424ceb'
 auth_token = 'f943215834680acddd9029590509070a'
 twilio_phone_number = '+12708734145'
-my_phone_number = '+19713025053'
+my_phone_number = '+19715543309'
 
 #get url
 Url = raw_input("What is the URL of the website you want to check? :" + '\n')
