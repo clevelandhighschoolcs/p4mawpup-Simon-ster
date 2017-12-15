@@ -7,6 +7,7 @@ import requests
 from twilio.rest import Client
 
 #twilio stuff, change as nessecary (I changed it so its not my number, don't get any ideas Morgan)
+#Darn -Morgan
 
 #account_sid = 'ACf96cb653d85bd234afacdc073a0553424ceb'
 #auth_token = 'f94322158346as80acddd9h029590509070a'
